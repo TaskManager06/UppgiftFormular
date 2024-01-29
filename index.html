@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Övning Formulär</title>
+</head>
+<body>
+<header> 
+    <h1>Formulär för utlandsresa </h1>
+</header>
+<main>
+    <form action="landsida.html" method="get">
+        <label for="namn"> Namn</label>
+        <input type="text" id="namn" name="namn">
+        <br>
+        <label for="land"> Vilket land bor du nuvarande i? </label>
+        <input type="text" id="land" name="land">
+        <br>
+        <label for="email"> E-post </label>
+        <input type="text" id="email" name="email">
+        <br>
+        
+
+        <p> Vilken åldersgrupp tillhör du ?</p>
+
+        <input type="radio" id="ageGroupOne" name="ageGroup" value="0-18">
+        <label for="ageGroupOne">0-18</label><br>
+
+        <input type="radio" id="ageGroupTwo" name="ageGroup" value="19-30">
+        <label for="ageGroupTwo">19-30</label><br>
+
+        <input type="radio" id="ageGroupThree" name="ageGroup" value="31-50">
+        <label for="ageGroupThree">31-50</label><br>
+
+        <input type="radio" id="ageGroupFour" name="ageGroup" value="51-70">
+        <label for="ageGroupFour">51-70</label><br>
+
+        <input type="radio" id="ageGroupFive" name="ageGroup" value="71-90">
+        <label for="ageGroupFive">71-90</label><br>
+
+        <input type="radio" id="ageGroupSix" name="ageGroup" value="91+">
+        <label for="ageGroupSix">91+</label>
+        <br>
+        <br>
+    
+        <label for="resemål">Välj resemål</label>
+        <select id="resemål" name="resemål" size="1">
+            <option value="Spanien">Spanien</option>
+            <option value="Tyskland">Tyskland</option>
+            <option value="USA">USA</option>
+            <option value="Japan">Japan</option>
+            <option value="England">England</option>
+            <option value="Portugal">Portugal</option>
+            <option value="Kroatien">Kroatien</option>
+            <option value="Danmark">Danmark</option>
+            <option value="Mexico">Mexico</option>
+        </select>
+        <br><br>
+        <label for="frukost">Frukost ?</label>
+        <input type="checkbox" id="frukost">
+        <br>
+        <label for="extraDag">Extra dag ?</label>
+        <input type="checkbox" id="extraDag">
+        <br>
+        <label for="förstaKlass">Första klass ? </label>
+        <input type="checkbox" id="förstaKlass">
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+</main>
+</body>

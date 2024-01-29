@@ -1,0 +1,29 @@
+form{
+    position:absolute;
+}
+
+footer{
+    position:absolute;
+    bottom:0;
+    left:50vw;
+}
+
+.tack > main{
+    position: absolute;
+    left:50vw;
+    transform: translate(-50%,0);
+    top:50vh;
+}
+.tack > header{
+    z-index:50;
+    position: absolute;
+    left:50vw;
+    top:25vh;
+    transform: translate(-50%,0);
+}
+.tack{
+    background:rgb(100, 100, 238);
+}
+body{
+    background: rgb(196, 193, 193);
+}
