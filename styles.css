@@ -1,32 +1,103 @@
-form{
-    position:absolute;
+form {
+	transform: rotate(0deg);
+	position: absolute;
+	left: 500px;
+	top: 250px;
+	z-index: 1;
+	pointer-events: auto;
+}
+body {
+	position: fixed;
+}
+#aaa {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	left: 0px;
+	top: 0px;
+	z-index: 110;
+}
+#body {
+	position: absolute;
+	width: 100px;
+	height: 300px;
+	left: 90vw;
+	top: 80vh;
+	transform: translate(-50%, -50%);
+	z-index: 112;
+	background-color: aqua;
+	transform: rotate(-45deg);
+}
+#head {
+	position: absolute;
+	width: 200px;
+	height: 150px;
+	left: 80vw;
+	top: 73vh;
+	transform: translate(-50%, -50%);
+	z-index: 112;
+	background-color: aqua;
+	transform: rotate(-45deg);
+}
+#button {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	left: 90vw;
+	top: 90vh;
+	transform: translate(-50%, -50%);
+	z-index: 113;
+	background-color: green;
+	transform: rotate(-45deg);
 }
 
-footer{
-    position:absolute;
-    bottom:0;
-    left:50vw;
+#a {
+	width: 10000vw;
+	height: 10000vw;
+	position: absolute;
+	top: 50vh;
+	left: 50vw;
+	transform: translate(-50%, -50%);
+	background: black;
+	z-index: 31;
+	border-radius: 100%;
+	pointer-events: none;
+}
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
 }
 
-.tack > main{
-    position: absolute;
-    left:50vw;
-    transform: translate(-50%,0);
-    top:50vh;
+footer {
+	position: absolute;
+	bottom: 0;
+	left: 50vw;
 }
-.tack > header{
-    z-index:50;
-    position: absolute;
-    left:50vw;
-    top:25vh;
-    transform: translate(-50%,0);
+
+.tack > main {
+	position: absolute;
+	left: 50vw;
+	transform: translate(-50%, 0);
+	top: 50vh;
 }
-.tack{
-    background:rgb(100, 100, 238);
+.tack > header {
+	z-index: 50;
+	position: absolute;
+	left: 50vw;
+	top: 25vh;
+	transform: translate(-50%, 0);
 }
-body{
-    background: rgb(196, 193, 193);
-    height:100vh;
+.tack {
+	background: rgb(100, 100, 238);
 }
-.huvudSida{
+body {
+	background: rgb(196, 193, 193);
+	height: 100vh;
+}
+.huvudSida {
 }
